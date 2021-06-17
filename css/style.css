@@ -135,15 +135,25 @@ a#profile-color img {
     padding: 30px 0;
 }
 
-.albums-section .row.recently {
+.albums-section .row {
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.albums-section .row.recently [class*='col'] {
+.albums-section .row [class*='col'] {
     padding: 5px;
 }
 
 .albums-section h3 {
     padding: 10px 0;
 } 
+
+/***** colonna destra - albums section row3 *****/
+
+.albums-section h2 {
+    padding: 30px 0 10px 0;
+}
+
+.albums-section h2 + h5 {
+    padding-bottom: 30px;
+}
