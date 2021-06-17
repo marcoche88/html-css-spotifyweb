@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /* layout */
 
 #main-content {
@@ -15,6 +19,11 @@
 #left-navbar {
     width: 50px;
     background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #main-section {
@@ -25,9 +34,9 @@
 
 #main-header {
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
     width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .albums-section {
@@ -46,3 +55,24 @@ footer {
         width: 150px;
     }
 }
+
+/* colonna sinistra - nav */
+
+#left-navbar a {
+    display: inline-block;
+    padding: 3px 11px 5px 11px;
+}
+
+a#small-download {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+a#profile-color img {
+    background-color: rgb(128, 128, 128);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 0px;
+}
+
