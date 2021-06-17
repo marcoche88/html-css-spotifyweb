@@ -11,7 +11,7 @@ img {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 
@@ -28,6 +28,7 @@ body {
 #left-navbar {
     width: 50px;
     background-color: black;
+    flex-shrink: 0;
 }
 
 #main-section {
@@ -99,7 +100,7 @@ a#profile-color img {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     display: inline-block;
     border: 1px solid white;
@@ -121,9 +122,11 @@ a#profile-color img {
     align-content: flex-start;
 }
 
-.albums-section .row.nav-top .col {
+.albums-section .row.nav-top a {
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    color: #828282;
+    font-size: 0.8rem;
     font-weight: bold;
     padding: 10px 10px 20px 10px;
     flex-shrink: 0;
@@ -135,7 +138,9 @@ a#profile-color img {
     padding: 30px 0;
 }
 
-.albums-section .row {
+.albums-section .row.recently,
+.albums-section .row.create-for,
+.albums-section .row.artists {
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -144,7 +149,7 @@ a#profile-color img {
     padding: 5px;
 }
 
-.albums-section h3 {
+.albums-section h4 {
     padding: 10px 0;
 } 
 
@@ -154,6 +159,12 @@ a#profile-color img {
     padding: 30px 0 10px 0;
 }
 
-.albums-section h2 + h5 {
+.albums-section h2 + h6 {
     padding-bottom: 30px;
+}
+
+/***** colonna destra - albums section row4 *****/
+
+.albums-section .row.artists img {
+    border-radius: 50%;
 }
