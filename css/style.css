@@ -25,7 +25,7 @@ body {
     display: flex;
 }
 
-#left-navbar {
+.left-navbar {
     width: 50px;
     background-color: black;
     flex-shrink: 0;
@@ -54,24 +54,20 @@ footer {
     background-color: rgb(40, 40, 40);
 }
 
-@media screen and (min-width: 576px) {
-    #left-navbar {
-        width: 150px;
-    }
-}
+/***** colonna sinistra - navbar *****/
 
-/***** colonna sinistra - nav *****/
-
-#left-navbar {
+.left-navbar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#left-navbar a {
+.left-navbar a {
     display: inline-block;
     padding: 3px 11px 5px 11px;
+    text-decoration: none;
+    color: white;
 }
 
 a#small-download {
@@ -87,6 +83,34 @@ a#profile-color img {
     padding: 0px;
 }
 
+.invisible, #logo {
+    display: none;
+}
+
+/* media query navbar */
+@media screen and (min-width: 576px) {
+    .left-navbar {
+        width: 150px;
+    }
+
+    #main-header {
+        width: calc(100% - 150px);
+    }
+
+    #logo-small {
+        display: none;
+    }
+
+    .visible, #logo {
+        display: inline-block;
+    }
+
+    .left-navbar img {
+        width: 50px;
+        height: auto;
+    }
+}    
+
 /***** colonna destra - header *****/
 
 #main-header {
@@ -100,7 +124,7 @@ a#profile-color img {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     display: inline-block;
     border: 1px solid white;
@@ -126,8 +150,8 @@ a#profile-color img {
     text-decoration: none;
     text-transform: uppercase;
     color: #828282;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 0.7rem;
+    font-weight: 700;
     padding: 10px 10px 20px 10px;
     flex-shrink: 0;
 }
