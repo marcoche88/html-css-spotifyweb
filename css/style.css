@@ -1,0 +1,48 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* layout */
+
+#main-content {
+    display: flex;
+}
+
+#left-navbar {
+    width: 50px;
+    background-color: black;
+}
+
+#main-section {
+    flex-grow: 1;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+}
+
+#main-header {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+.albums-section {
+   background-color: rgb(21, 25, 33);
+   color: white;
+   padding-top: 100px;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+}
+
+@media screen and (min-width: 576px) {
+    #left-navbar {
+        width: 150px;
+    }
+}
