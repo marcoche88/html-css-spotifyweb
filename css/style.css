@@ -72,7 +72,7 @@ footer {
     color: white;
 }
 
-a#small-download {
+#small-download {
     padding-left: 17px;
     padding-right: 17px;
 }
@@ -167,6 +167,7 @@ a#profile-color img {
     }
 
     .list-name {
+        height: 100px;
         overflow-y: scroll;
     }
 
@@ -186,15 +187,27 @@ a#profile-color img {
         align-items: center;
     }
 
-    a#small-download {
+    #small-download {
         padding: 5px 0 5px 11px;
         width: 15%;
     }
 
-    a#small-download img {
+    #small-download img {
         vertical-align: middle;
     }
+
+    .rule {
+        border-top: 1px solid #898989;
+        margin: 5px 11px;
+    }
+
+    .profile-color-link span a {
+        color: white;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
 }
+
 /***** colonna destra - header *****/
 
 #main-header {
