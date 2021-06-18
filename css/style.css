@@ -289,3 +289,48 @@ a#profile-color img {
 .albums-section .row.artists img {
     border-radius: 50%;
 }
+
+/***** footer *****/
+
+footer.row {
+    align-items: center;
+}
+
+footer .col-xs {
+    border: 1px solid red;
+    flex-grow: 0;
+}
+
+.footer-left, .album-left {
+    display: flex;
+    align-items: center;
+}
+
+.album-img {
+    width: 50px;
+    padding: 10px;
+}
+
+.album-text h5 {
+    font-size: 0.8rem;
+}
+
+.album-text h6 {
+    font-size: 0.6rem;
+}
+
+.icon-left {
+    margin-left: 30px;   
+}
+
+/* media query footer */
+
+@media screen and (min-width: 768px) {
+    .icon-left {
+        display: flex;
+    }
+
+    .icon-left div {
+        margin: 0 5px;
+    }
+}
