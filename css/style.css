@@ -112,18 +112,18 @@ a#profile-color img {
         margin: 10px 0;
     }
 
-    .home-link, .search-link, .library-link {
+    [class$='-link'] {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .home-link a, .search-link a, .library-link a  {
+    [class$='-link'] a {
         padding-right: 0;
         width: 20%;
     }
 
-    .home-link span a, .search-link span a, .library-link span a {
+    [class$='-link'] span a {
         padding: 0;
         padding-left: 5px;
         width: 100%;
@@ -134,6 +134,52 @@ a#profile-color img {
 
     .home-link span a {
         color: white;
+    }
+
+    .playlist {
+        padding-top: 15px;
+        padding-left: 11px;
+    }
+
+    .playlist h5 {
+        text-transform: uppercase;
+    }
+
+    .playlist .add {
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+    }
+
+    .playlist .plus {
+        display: inline-block;
+        background-color: #828282;
+        color: black;
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        text-align: center;
+        font-size: 1.3rem;
+        margin-right: 5px;
+    }
+
+    .list-name {
+        overflow-y: scroll;
+    }
+
+    .list-name ul li {
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+
+    .list-name a {
+        color: #898989;
+        padding-left: 0;
     }
 }    
 
