@@ -15,26 +15,27 @@
 <body>
 
     <!-- main flex -->
-    <main id="main-content">
+    <div id="wrapper">
 
         <!-- col sinistra -->
         <nav class="left-navbar">
             <div class="nav-top">
                 <a href="#" id="logo-small"><img src="./img/logo-small.svg" alt="logo-small"></a>
                 <a href="#" id="logo"><img src="./img/logo.svg" alt="logo"></a>
-                <a href="#">
-                    <img src="./img/home.svg" alt="home">
-                    <span class="home invisible visible">Home</span>
-                </a>
-                <a href="#">
-                    <img src="./img/search.svg" alt="search">
-                    <span class="search font-grey invisible visible">Cerca</span>
-                </a>
-                <a href="#">
-                    <img src="./img/libreria.svg" alt="libreria">
-                    <span class="library font-grey invisible visible">La tua libreria</span>
-                </a>
+                <div class="home-link">
+                    <a href="#"><img src="./img/home.svg" alt="home"></a>
+                    <span class="home invisible visible"><a href="#">Home</a></span>
+                </div>
+                <div class="search-link">
+                    <a href="#"><img src="./img/search.svg" alt="search"></a>
+                    <span class="search invisible visible"><a href="#">Cerca</a></span>
+                </div>
+                <div class="library-link">
+                    <a href="#"><img src="./img/libreria.svg" alt="libreria"></a>
+                    <span class="library invisible visible"><a href="#">La tua libreria</a></span>
+                </div>
             </div>
+
             <div class="nav-bottom">
                 <a href="#" id="small-download"><img src="./img/download.svg" alt="download"></a>
                 <a href="#" id="profile-color"><img src="./img/profile.svg" alt="profile"></a>
@@ -42,7 +43,7 @@
         </nav>
 
         <!-- colonna destra -->
-        <section id="main-section">
+        <main id="main-section">
 
             <!-- header -->
             <header id="main-header">
@@ -129,8 +130,8 @@
                 </div>
 
             </section>
-        </section>
-    </main>
+        </main>
+    </div>
     
     <!-- footer -->
     <footer></footer>
