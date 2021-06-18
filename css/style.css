@@ -181,8 +181,20 @@ a#profile-color img {
         color: #898989;
         padding-left: 0;
     }
-}    
 
+    .small-download-link {
+        align-items: center;
+    }
+
+    a#small-download {
+        padding: 5px 0 5px 11px;
+        width: 15%;
+    }
+
+    a#small-download img {
+        vertical-align: middle;
+    }
+}
 /***** colonna destra - header *****/
 
 #main-header {
