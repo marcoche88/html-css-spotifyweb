@@ -171,7 +171,7 @@ a#profile-color img {
     }
 
     .list-name {
-        height: 100px;
+        height: 200px;
         overflow-y: scroll;
     }
 
@@ -404,6 +404,12 @@ footer .col-xs {
 }
 
 /* media query footer */
+
+@media screen and (min-width: 576px) {
+    .album-text h6 {
+        display: inline-block;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .icon-left {
