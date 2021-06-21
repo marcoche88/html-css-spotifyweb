@@ -378,10 +378,24 @@ footer .col-xs {
 
 .album-text h6 {
     font-size: 0.6rem;
+    width: 30px;
 }
 
 .icon-left {
-    margin-left: 30px;   
+    margin-left: 30px;
+    cursor: pointer;   
+}
+
+.icon-left .heart:hover,
+.icon-left .folder:hover {
+    color: white;
+}
+
+
+.album-text h6:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 /* footer center */
@@ -395,6 +409,7 @@ footer .col-xs {
 .icon-center > i {
     margin: 10px 5px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 .icon-center .fa-play-circle {
@@ -421,6 +436,7 @@ footer .col-xs {
     height: 4px;
     background-color: #898989;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .big-load, .small-load {
@@ -430,11 +446,39 @@ footer .col-xs {
     border-radius: 5px;
 }
 
+.icon-center .far.fa-play-circle:hover {
+    transform: scale(1.1);
+}
+
+.big-bar:hover .big-load,
+.small-bar:hover .small-load {
+    background-color: rgb(188, 245, 90);
+    position: relative;
+}
+
+.big-bar:hover .big-load::after,
+.small-bar:hover .small-load::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
 /* footer right */
 
 .icon-right {
     display: flex;
     align-items: center;
+}
+
+.icon-right i {
+    cursor: pointer;
 }
 
 .small-bar {
@@ -450,7 +494,7 @@ footer .col-xs {
 
 @media screen and (min-width: 576px) {
     .album-text h6 {
-        display: inline-block;
+        width: 100%;
     }
 }
 
