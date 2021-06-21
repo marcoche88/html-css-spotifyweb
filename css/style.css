@@ -60,7 +60,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
 }
 
@@ -140,6 +140,8 @@ a#profile-color img {
     }
 
     .playlist {
+        flex-grow: 1;
+        overflow: auto;
         padding-top: 15px;
         padding-left: 11px;
     }
@@ -149,7 +151,7 @@ a#profile-color img {
     }
 
     .playlist .add {
-        text-align: center;
+        /* text-align: center; */
         height: 35px;
         line-height: 35px;
         font-size: 0.9rem;
@@ -169,9 +171,9 @@ a#profile-color img {
         margin-right: 5px;
     }
 
-    .list-name {
+    /* .list-name {
         overflow: auto;
-    }
+    } */
 
     .list-name ul li {
         list-style-type: none;
