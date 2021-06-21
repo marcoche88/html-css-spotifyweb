@@ -133,7 +133,7 @@ a#profile-color img {
     }
 
     .home-link {
-        border-left: 4px solid rgb(192, 250, 91);
+        border-left: 3px solid rgb(192, 250, 91);
     }
 
     .home-link span a {
@@ -205,10 +205,21 @@ a#profile-color img {
         margin: 5px 11px;
     }
 
-    .profile-color-link span a {
+    .profile-color-link span {
         color: white;
         font-size: 1rem;
-        padding-left: 10px;
+        padding-left: 10px; 
+        font-weight: bold;
+    }
+
+    .list-name ul li a:hover,
+    [class$='-link'] span a:hover,
+    .playlist .add:hover {
+        color: white;
+    }
+
+    .playlist .add:hover .plus {
+        background-color: white;
     }
 }
 
@@ -231,6 +242,10 @@ a#profile-color img {
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px 30px;
+}
+
+#main-header a:hover {
+    transform: scale(1.1);
 }
 
 /***** colonna destra - albums section row1 *****/
@@ -258,6 +273,11 @@ a#profile-color img {
     font-weight: 700;
     margin: 10px 10px 3px 10px;
 }
+
+.albums-section .row.nav-top a:hover {
+    color: white;
+}
+
  .nav-top .col:first-child {
     position: relative;
  }
