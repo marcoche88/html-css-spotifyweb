@@ -52,7 +52,7 @@ body {
 footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
-    z-index: 2;
+    z-index: 1;
 }
 
 /***** colonna sinistra - navbar *****/
@@ -240,11 +240,13 @@ a#profile-color img {
 }
 
 .albums-section .row {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: flex-start;
+}
+
+.albums-section .row.nav-top li {
+    list-style-type: none;
 }
 
 .albums-section .row.nav-top a {
@@ -260,7 +262,7 @@ a#profile-color img {
     position: relative;
  }
 
-.special::after {
+.active::after {
     content:'';
     display: block;
     position: absolute;
@@ -282,6 +284,7 @@ a#profile-color img {
 .albums-section .row.artists {
     justify-content: flex-start;
     align-items: flex-start;
+    margin: 0 -5px;
 }
 
 .albums-section .row [class*='col'] {
@@ -291,6 +294,26 @@ a#profile-color img {
 .albums-section h4 {
     padding: 10px 0;
 } 
+
+.img-recently {
+    position: relative;
+    cursor: pointer;
+}
+
+.recently .img-recently:hover img {
+    filter: opacity(0.5);
+}
+
+.recently .img-recently:hover::after {
+    font-family: "Font Awesome 5 Free";
+    /* display: inline-block; */
+    content: '\f144';
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
 
 /***** colonna destra - albums section row3 *****/
 
