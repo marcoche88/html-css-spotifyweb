@@ -34,7 +34,7 @@ body {
 
 #main-section {
     flex-grow: 1;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 #main-header {
@@ -52,7 +52,6 @@ body {
 footer {
     height: 100px;
     background-color: rgb(40, 40, 40);
-    z-index: 1;
 }
 
 /***** colonna sinistra - navbar *****/
@@ -171,8 +170,7 @@ a#profile-color img {
     }
 
     .list-name {
-        height: 200px;
-        overflow-y: scroll;
+        overflow: auto;
     }
 
     .list-name ul li {
