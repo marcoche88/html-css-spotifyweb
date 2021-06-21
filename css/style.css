@@ -326,7 +326,6 @@ a#profile-color img {
 
 .recently .img-recently:hover::after {
     font-family: "Font Awesome 5 Free";
-    /* display: inline-block; */
     content: '\f144';
     font-size: 50px;
     position: absolute;
